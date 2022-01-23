@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Conway's Game of Life</title>
+		<script src="./script.js"></script>
+		<link rel="stylesheet" href="./styling.css"></link>
+	</head>
+
+	<body class="menu-body">
+	
+		<div class="start-menu">
+			<div class="form-item">
+				<label id="label-1" for="grid-size-1">Grid Height: 30 Blocks</label>
+				<input id="grid-size-1" type="range" value="30" oninput="gridSizeInput(1)">
+			</div>
+
+			<div class="form-item">
+				<label id="label-2"for="grid-size-2">Grid Width: 30 Blocks</label>
+				<input id="grid-size-2" type="range" value="30" oninput="gridSizeInput(2)">
+			</div>
+
+			<button id="start-button" onclick="createGrid()">Start</button>
+
+		</div>
+
+	</body>
+
+</html>
